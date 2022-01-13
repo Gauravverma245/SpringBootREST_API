@@ -40,9 +40,9 @@ public class CourseServiceImpl implements CourseService{
     }
 
     @Override
-    public void updateCourse(Course course) {
+    public void updateCourse(Course course, Long id) {
         for(Course c: list){
-            if(c.getId() == course.getId()){
+            if(c.getId() == id){
                 c.setTitle(course.getTitle());
                 c.setDescription(course.getDescription());
             }

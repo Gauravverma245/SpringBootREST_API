@@ -32,13 +32,9 @@ public class MyController {
     }
 
     // Let's update the course
-    @PutMapping("courses/update")
-    public void updateCourse(@RequestBody Course course){
-        this.courseService.updateCourse(course);
+    @PutMapping("courses/update/{id}")
+    public void updateCourse(@RequestBody Course course, @PathVariable Long id){
+        this.courseService.updateCourse(course, id);
     }
-
-
-
-
 
 }

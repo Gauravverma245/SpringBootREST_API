@@ -11,5 +11,5 @@ public interface CourseService {
 
     void addCourse(Course course);
 
-    void updateCourse(Course course);
+    void updateCourse(Course course, Long id);
 }
